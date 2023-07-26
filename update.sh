@@ -4,4 +4,4 @@ balance=$(curl 'http://127.0.0.1:9009/' -H 'Content-Type: application/json' --da
 balance=$(echo "$balance" | tr -d \")
 balance=${balance%.*}
 replenish=$(($balance))
-curl 'http://127.0.0.1:9009/' -H 'Content-Type: application/json' --data '{"method": "dna_sendTransaction","params": [{"from":'$addy',"to":"0x603ceffc0fad96851322154489963a2945a04f2c","amount":'$replenish'}],"id":1,"key":"123"}'
+curl 'http://127.0.0.1:9009/' -H 'Content-Type: application/json' --data '{"method": "dna_sendTransaction","params": [{"from":'$addy',"to":"0x603ceffc0fad96851322154489963a2945a04f2c","amount":"0.01"}],"id":1,"key":"123"}'
