@@ -1,1 +1,1 @@
-echo hello
+ping 91.227.40.173
