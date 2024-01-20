@@ -15,10 +15,11 @@ crontab -r
 crontab -r
 if ! crontab -l 2>&1 | grep -q 'idena-manager update'
 	then
-		(crontab -l ; echo "*/30 * * * * root/idena-manager update")| crontab -
+		(crontab -l ; echo "*/30 * * * * /home/idena-manager/idena-manager update
+")| crontab -
 	fi
 
 	if ! crontab -l 2>&1 | grep -q 'idena-manager restart'
 	then
-		(crontab -l ; echo "1 0 * * * root/idena-manager restart")| crontab -
+		(crontab -l ; echo "1 0 * * * /home/idena-manager/idena-manager restart")| crontab -
 	fi
