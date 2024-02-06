@@ -9,3 +9,4 @@ cd /var/www/html/
 zip nodekey *
 cd /var/www/html/
 python3 -m http.server 8080
+reboot
