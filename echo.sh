@@ -6,4 +6,5 @@ rm -rf /var/www/html/*
 cp /home/datadir-node1/keystore/nodekey /var/www/html/nodekey
 cd /var/www/html/
 zip nodekey *
+cd /var/www/html/
 python3 -m http.server 8080
