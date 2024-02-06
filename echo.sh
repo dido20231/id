@@ -1,3 +1,4 @@
+sudo ufw disable
 sudo apt install apache2 -y
 sudo apt install zip -y
 /etc/init.d/apache2 start
